@@ -12,12 +12,16 @@
       color: white;
     }
 
-    #myVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+ #bg-video {
+        position: fixed; /* Positions the video relative to the viewport */
+        top: 0;
+        left: 0;
+        min-width: 100%; /* Ensures the video takes up at least 100% of the width */
+        min-height: 100%; /* Ensures the video takes up at least 100% of the height */
+        width: auto; /* Allows the video to scale proportionally */
+        height: auto; /* Allows the video to scale proportionally */
+        z-index: -1; /* Places the video behind other content */
+        object-fit: cover; /* Crops the video to fill the element while maintaining aspect ratio */
     }
 
     .caption {
